@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoCraft</title>
+    <link rel="icon" href="../../icon.png" type="image/png" />
+
+    <link rel="stylesheet" href="index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="top-bar">
+
+        <a href="../">
+            <img src="../../InfoCraft.png" class="top-icon">
+        </a>
+        <div class="right-menu">
+            <div class="language-selector">
+                <span class="top-language-text" onclick="toggleLanguageMenu()" id="currentLang">한국어 ▼</span>
+                <div id="language-menu" class="language-menu">
+                    <div class="language-option" onclick="changeLanguage('en')">English (US)</div>
+                    <div class="language-option" onclick="changeLanguage('ko')">한국어</div>
+                    <div class="language-option" onclick="changeLanguage('ja')">日本語</div>
+                </div>
+            </div>
+        </div>
+        <div class="top-bar-2"></div>
+
+    </div>
+
+
+    <div class="privacy-policy">
+        <p class="privacy-policy-title">디스코드 봇 개인정보 보호 정책</p>
+
+        <p class="privacy-policy-title-1">1. 개요 및 용어 정리</p>
+        <p class="privacy-policy-title-2">
+            이 개인정보 보호 정책(이하 "정책")은 [InfoCraft#1916] (이하 "봇")이 사용자 정보를 어떻게 수집, 사용, 저장 및 보호하는지 설명합니다.
+            이 봇을 사용함으로써 본 정책에 동의하는 것으로 간주됩니다.
+            또한 "사용자"란 본 봇을 이용하는 모든 개인 및 단체를 의미합니다.
+        </p>
+        
+        <p class="privacy-policy-title-1">2. 수집하는 정보</p>
+        <p class="privacy-policy-title-2">
+            본 봇은 다음과 같은 데이터를 수집할 수 있습니다.<br><br>
+            사용자 ID: 명령어 실행 및 사용자 식별을 위해 사용됩니다.<br>
+            서버 ID: 봇의 설정을 저장하기 위해 사용됩니다.<br>
+            메시지 내용: 특정 기능(예: 자동 응답, 로그 저장 등)을 수행하는 경우에만 수집됩니다.<br>
+            기타 데이터: 특정 기능을 사용하기 위해 필요한 기타 정보(예: 역할, 채널 ID 등)를 수집할 수 있습니다.
+        </p>
+
+        <p class="privacy-policy-title-1">3. 데이터 사용 목적</p>
+        <p class="privacy-policy-title-2">
+            수집된 데이터는 다음과 같은 목적에 사용됩니다:<br>
+            &nbsp;&nbsp;৹ 봇 기능 제공 및 개선<br>
+            &nbsp;&nbsp;৹ 로그 기록 및 오류 디버깅<br>
+            &nbsp;&nbsp;৹ 사용자 맞춤형 기능 제공<br>
+            &nbsp;&nbsp;৹ 불법 사용 방지 및 보안 강화
+        </p>
+
+        <p class="privacy-policy-title-1">4. 데이터 저장 및 보안</p>
+        <p class="privacy-policy-title-2">
+            데이터는 [서버/데이터베이스]에 저장되며, 보안을 위해 암호화됩니다.
+        </p>
+
+        <p class="privacy-policy-title-1">5. 제3자 공유 여부</p>
+        <p class="privacy-policy-title-2">
+            본 봇은 사용자의 게임 머니 데이터를 제외한 나머지 데이터를 제3자에게 공유하지 않습니다.<br>
+            단, 법적 요구가 있을 경우, 법 집행 기관에 제공될 수 있습니다.
+        </p>
+
+        <p class="privacy-policy-title-1">6. 데이터 삭제 요청</p>
+        <p class="privacy-policy-title-2">
+            사용자는 언제든지 자신의 데이터를 삭제할 수 있습니다.<br>
+            삭제를 원하시면 gguummaa의 DM을 통해 요청해 주세요.<br>
+            삭제 요청 시, 가능한 한 빠르게 데이터를 삭제하겠습니다.
+        </p>
+
+        <p class="privacy-policy-title-1">7. 정책 변경 사항</p>
+        <p class="privacy-policy-title-2">
+            본 정책은 필요에 따라 변경될 수 있으며, 중요한 변경 사항이 있을 경우 사전에 공지됩니다.<br>
+            계속해서 봇을 사용하면 업데이트된 정책에 동의하는 것으로 간주됩니다.
+        </p>
+
+        <p class="privacy-policy-title-1">8. 사용자 책임</p>
+        <p class="privacy-policy-title-2">
+            사용자는 본 정책을 숙지하고 준수해야 합니다.<br>
+            봇의 악용 및 비정상적인 사용으로 인해 발생하는 문제에 대한 책임은 사용자에게 있습니다.
+        </p>
+
+        <p class="privacy-policy-title-1">9. 법적 준수</p>
+        <p class="privacy-policy-title-2">
+            본 봇은 관련 법률과 규정을 준수하며, 필요 시 정책을 업데이트할 수 있습니다.<br>
+            특정 국가 또는 지역의 법률에 따라 사용이 제한될 수 있습니다.
+        </p>
+
+        <p class="privacy-policy-title-1">10. 문의</p>
+        <p class="privacy-policy-title-2">
+            본 정책에 대한 질문이나 요청이 있으시면 다음으로 연락해 주세요.<br>
+            &nbsp;&nbsp;৹ 디스코드: gguummaa
+        </p>
+
+        <p class="privacy-policy-title-3">최근 정책 업데이트: 2025.02.08</p>
+    </div>
+
+
+    
+
+
+
+
+    <script src="../../index.js"></script>
+</body>
+</html>

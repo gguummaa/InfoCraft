@@ -1,0 +1,557 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+}
+
+body {
+    min-width: 1400px;
+    background-color: #4d6652; /* #526579 파란회색 → 초록회색 */
+}
+
+.top-bar {
+    background-color: #1e3322; /* #223446 네이비 → 딥그린 */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.top-icon {
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.right-menu {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 65px;
+}
+
+.language-selector {
+    position: relative;
+}
+
+.top-language-text {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #5a7160; /* #607183 파란회색 → 초록회색 */
+    user-select: none;
+}
+
+.language-menu {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: #2a3f2b; /* #2d4052 다크네이비 → 다크그린 */
+    border-radius: 8px;
+    min-width: 150px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    z-index: 1001;
+}
+
+.language-option {
+    padding: 12px 16px;
+    color: #b0c5b2; /* #b8c5d0 파란회색 → 초록회색 */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+.language-option:hover {
+    background-color: #374f38; /* #3a4f64 → 초록 계열 */
+}
+
+.language-option:active {
+    background-color: #3f5a40; /* #425a70 → 초록 계열 */
+}
+
+.top-language-text:hover {
+    color: #678069; /* #6e8094 → 초록회색 */
+}
+
+.top-language-text:active {
+    color: #5f7561; /* #67778a → 초록회색 */
+}
+
+.top-login {
+    width: 130px;
+    height: 35px;
+    background-color: #a8e090; /* #a8c7ff 파란 → 연초록 */
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.top-login:hover {
+    background-color: #96cc7e; /* #99b4e6 → 초록 */
+}
+
+.top-login:active {
+    background-color: #87bc6e; /* #8da6d4 → 초록 */
+}
+
+.top-bar-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-color: #3b5a3c; /* #42586b → 초록 계열 */
+}
+
+.main-text {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family: "Jua", sans-serif;
+    margin-right: 650px;
+    margin-top: 330px;
+    color: #161616;
+}
+
+.main-text-2 {
+    display: flex;
+    justify-content: center;
+    margin-right: 710px;
+    color: rgb(29, 29, 29);
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+.main-button-add-a {
+    text-decoration: none;
+    display: block;
+    margin: 0 auto;
+    width: 135px;
+    transform: translateX(-540px);
+    margin-top: 15px;
+}
+
+.main-button-add {
+    cursor: pointer;
+    width: 100%;
+    height: 42px;
+    font-size: 20px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    background-color: #4e9438; /* #617cc7 파란 → 초록 */
+    color: rgb(226, 231, 231);
+}
+
+.main-button-add:hover {
+    background-color: #478832; /* #5c75b9 → 초록 */
+    color: rgb(204, 209, 209);
+}
+
+.main-button-add:active {
+    background-color: #579e42; /* rgb(114,129,194) → 초록 */
+    color: rgb(196, 201, 201);
+}
+
+.main-button-help {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    width: 135px;
+    height: 42px;
+    transform: translateX(-390px);
+    margin-top: -42px;
+    font-size: 20px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    background-color: #b9b9b95d; /* 유지 (무채색 계열) */
+    color: rgb(212, 212, 212);
+}
+
+.main-button-help:hover {
+    background-color: #aaaaaa5d;
+    color: rgb(199, 199, 199);
+}
+
+.main-button-help:active {
+    background-color: #a0a0a05d;
+    color: rgb(192, 192, 192);
+}
+
+.server-bar {
+    background-color: #0a1a0b; /* #0e1a25 딥네이비 → 딥그린 */
+    width: 100%;
+    height: 170px;
+    margin-top: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.server-bar-text {
+    color: #ceddd0; /* #ced0dd 파란회색 → 초록회색 */
+    font-size: 30px;
+    font-family: "Jua", sans-serif;
+}
+
+.help-bar {
+    background-color: #4d6652; /* #526579 → 초록회색 */
+    width: 100%;
+    height: 1670px;
+    margin-top: 370px;
+}
+
+
+
+.help-image-1 {
+    display: block;
+    margin: 0 auto;
+    transform: translateX(-390px);
+    margin-top: 50px;
+}
+
+.help-text-wrap-1 {
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+    transform: translateX(205px);
+    margin-top: -430px;
+}
+
+.help-text-1 {
+    font-size: 40px;
+    font-family: "Black Han Sans", sans-serif;
+    margin-bottom: 20px;
+}
+
+.help-text-2 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 26px;
+    color: #333333;
+}
+
+
+
+
+
+.help-image-2 {
+    display: block;
+    margin: 0 auto;
+    transform: translateX(-390px);
+    margin-top: 620px;
+}
+
+.help-text-wrap-2 {
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+    transform: translateX(205px);
+    margin-top: -430px;
+}
+
+.help-text-3 {
+    font-size: 40px;
+    font-family: "Black Han Sans", sans-serif;
+    margin-bottom: 20px;
+}
+
+.help-text-4 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 26px;
+    color: #333333;
+}
+
+
+
+
+
+.down-bar {
+    background-color: #1e3322; /* #223446 네이비 → 딥그린 */
+    width: 100%;
+    height: 300px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.down-InfoLogs {
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 720px;
+    margin-top: -140px;
+    color: rgb(240, 240, 240);
+}
+
+.down-text-1-div {
+    margin-top: -120px;
+    margin-right: 100px;
+}
+
+.down-text-1 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #a3a3a3;
+}
+
+.down-text-2-div {
+    margin-top: 10px;
+}
+
+.down-text-2-a {
+    text-decoration: none;
+}
+
+.down-text-2 {
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-top: 5px;
+    color: #818181;
+}
+
+.down-text-2:hover {
+    color: #707070;
+}
+
+.down-text-2:active {
+    color: #646464;
+}
+
+.down-text-3-div {
+    margin-top: -130px;
+    margin-right: 100px;
+}
+
+.down-text-3-1-div {
+    margin-top: -90px;
+    margin-right: 100px;
+}
+
+.down-text-3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #a3a3a3;
+}
+
+.down-text-4-div {
+    margin-top: 10px;
+}
+
+.down-text-4 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 5px;
+    color: #818181;
+}
+
+.down-text-5 {
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #a3a3a3;
+}
+
+.down-text-6-div {
+    margin-top: 10px;
+}
+
+.down-text-6 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 5px;
+    color: #818181;
+}
+
+.down-text-7-div {
+    margin-top: -100px;
+    margin-right: 30px;
+}
+
+.down-text-7 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #a3a3a3;
+}
+
+.down-text-8-div {
+    margin-top: 10px;
+}
+
+.down-text-8-a {
+    text-decoration: none;
+}
+
+.down-text-8 {
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-top: 5px;
+    color: #818181;
+}
+
+.down-text-8:hover {
+    color: #707070;
+}
+
+.down-text-8:active {
+    color: #646464;
+}
+
+.down-text-9-div {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: -620px;
+}
+
+.down-text-9 {
+    font-size: 13px;
+    color: #9a9a9a;
+}
+
+.down-text-9-a {
+    text-decoration: none;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.user-dropdown {
+  position: relative;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.user-avatar:hover {
+  transform: scale(1.1);
+}
+
+.user-menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  min-width: 200px;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.user-menu-header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background: #f5f5f5;
+  gap: 10px;
+}
+
+.user-menu-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.user-menu-name {
+  font-weight: bold;
+  margin: 0;
+  font-size: 14px;
+}
+
+.user-menu-id {
+  color: #888;
+  margin: 0;
+  font-size: 12px;
+}
+
+.user-menu-divider {
+  height: 1px;
+  background: #e0e0e0;
+  margin: 0;
+}
+
+.user-menu-item {
+  display: block;
+  padding: 12px 15px;
+  color: #333;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.user-menu-item:hover {
+  background: #f5f5f5;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        min-width: auto;
+    }
+
+    .main-text {
+        font-size: 28px;
+        margin: 50px 20px 0 20px;
+        text-align: center;
+    }
+
+    .main-text-2 {
+        font-size: 16px;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .main-button-add-a, .main-button-help {
+        transform: none;
+        margin: 10px auto;
+        width: 90%;
+    }
+
+    .top-bar {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .right-menu {
+        margin: 10px 0 0 0;
+        gap: 10px;
+    }
+
+    .help-text-wrap-1, .help-text-wrap-2 {
+        transform: none;
+        margin: 20px auto;
+        max-width: 90%;
+    }
+
+    .help-image-1, .help-image-2, .help-image-3 {
+        transform: none;
+        width: 90%;
+        margin: 20px auto;
+    }
+}

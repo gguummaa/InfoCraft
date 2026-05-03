@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoCraft</title>
+    <link rel="icon" href="../icon.png" type="image/png" />
+
+    <meta property="og:title" content="InfoCraft" />
+    <meta property="og:description" content="InfoCraftの公式ウェブサイト" />
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/1401185117086552175/1499770121013690478/icon.png?ex=69f60145&is=69f4afc5&hm=b1a9a6d513d4955136bb6f4bda7f1e1733b90efba69425d3d47a7ea96b937b9f&" />
+    <meta property="og:url" content="https://craft.infobot.uk/" />
+    <meta property="og:type" content="website" />
+
+
+    <link rel="stylesheet" href="index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="top-bar">
+
+        <img src="../InfoCraft.png" class="top-icon">
+
+        <div class="right-menu">
+            <div class="language-selector">
+                <span class="top-language-text" onclick="toggleLanguageMenu()" id="currentLang">English (US) ▼</span>
+                <div id="language-menu" class="language-menu">
+                    <div class="language-option" onclick="changeLanguage('en')">English (US)</div>
+                    <div class="language-option" onclick="changeLanguage('ko')">한국어</div>
+                    <div class="language-option" onclick="changeLanguage('ja')">日本語</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="top-bar-2"></div>
+
+    </div>
+
+    <div class="main-div">
+        <p class="main-text" id="mainText">Capture every moment<br>that happens in your server!</p>
+        <p class="main-text-2" id="mainText2">Logs all server events, including message deletions, edits, joins, and leaves.</p>
+        <a href="https://discord.com/oauth2/authorize?client_id=1264223966566944910" target="_blank" rel="noopener noreferrer" class="main-button-add-a">
+            <button class="main-button-add" id="btnInvite">Invite</button>
+        </a>
+        <button class="main-button-help" onclick="scrollToServer()" id="btnFeatures">See features</button>
+    </div>
+
+    <div class="server-bar">
+        <p class="server-bar-text" id="serverCount">InfoCraft is currently used on 800 servers</p>
+    </div>
+
+    <div id="server-section" class="help-bar">
+        <img src="명령어 1.png" class="help-image-1">
+        <div class="help-text-wrap-1">
+            <P class="help-text-1" id="feature1Title">Easily Check Within Discord</P>
+            <p class="help-text-2" id="feature1Desc">Have you ever felt it was a hassle to launch Minecraft just to check server or skin information? With InfoCraft, you can conveniently access a wide range of Minecraft information directly within Discord. It provides details such as server status, player skins, ore distribution, crafting recipes, and much more. InfoCraft also supports three languages—Korean, English, and Japanese—so anyone can use it comfortably.</p>
+        </div>
+
+        
+        <img src="명령어 2.png" class="help-image-2">
+        <div class="help-text-wrap-2">
+            <p class="help-text-3" id="feature2Title">Various Recipes and Additional Features</p>
+            <p class="help-text-4" id="feature2Desc">InfoCraft presents a variety of information in an easy-to-understand way, including food recipes, enchantments, potions, and combat-related data. It also integrates with Discord to track your playtime, making it simple to see how long you've played. You can view playtime rankings among InfoCraft users, as well as rankings within your server. (To track playtime, Discord's 'Activity Status' must be enabled.)</p>
+        </div>
+    </div>
+
+
+    <div class="down-bar">
+        <p class="down-InfoLogs">InfoCraft</p>
+
+
+        <div class="down-text-1-div">
+            <p class="down-text-1" id="support-server">Support Server</p>
+            <div class="down-text-2-div">
+                <a href="https://discord.gg/64q43VEVtn" class="down-text-2-a" target="_blank" rel="noopener noreferrer">
+                    <p class="down-text-2" id="discord-server">Discord Server</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="down-text-3-div">
+            <p class="down-text-3" id="footerDev">Developer</p>
+            <div class="down-text-4-div">
+                <p class="down-text-4">gguummaa</p>
+            </div>
+        </div>
+
+        <div class="down-text-3-1-div">
+            <p class="down-text-5" id="footerTeam">Team</p>
+            <div class="down-text-6-div">
+                <p class="down-text-6">utf1972</p>
+                <p class="down-text-6">daeyoung_ceo</p>
+                <p class="down-text-6">sunharu0707</p>
+                <p class="down-text-6">aru._.0321</p>
+            </div>
+        </div>
+
+        <div class="down-text-7-div">
+            <p class="down-text-7" id="footerPolicy">Policies & Terms</p>
+            <div class="down-text-8-div">
+                <a href="privacy-policy/" class="down-text-8-a">
+                    <p class="down-text-8" id="footerPrivacy">Privacy Policy</p>
+                </a>
+                <a href="terms-of-service/" class="down-text-8-a">
+                    <p class="down-text-8" id="footerTerms">Terms of Service</p>
+                </a>
+            </div>
+        </div>
+        <div class="down-text-9-div">
+            <p class="down-text-9">Copyright © 2025 InfoCompany. All rights reserved.</p>
+        </div>
+    </div>
+
+
+
+
+    <script src="../index.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoCraft</title>
+    <link rel="icon" href="../../icon.png" type="image/png" />
+
+    <link rel="stylesheet" href="index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="top-bar">
+
+        <a href="../">
+            <img src="../../InfoCraft.png" class="top-icon">
+        </a>
+        <div class="right-menu">
+            <div class="language-selector">
+                <span class="top-language-text" onclick="toggleLanguageMenu()" id="currentLang">日本語 ▼</span>
+                <div id="language-menu" class="language-menu">
+                    <div class="language-option" onclick="changeLanguage('en')">English (US)</div>
+                    <div class="language-option" onclick="changeLanguage('ko')">한국어</div>
+                    <div class="language-option" onclick="changeLanguage('ja')">日本語</div>
+                </div>
+            </div>
+        </div>
+        <div class="top-bar-2"></div>
+
+    </div>
+
+
+    <div class="privacy-policy">
+    <p class="privacy-policy-title">Discordボット利用規約</p>
+
+    <p class="privacy-policy-title-1">1. 概要</p>
+        <p class="privacy-policy-title-2">
+            本利用規約（以下「規約」）は、[InfoCraft#1916]（以下「ボット」）の使用に関して、ユーザーと[gguummaa]（以下「運営者」）の間の権利、義務および責任を定めるものです。
+            ボットを使用することにより、ユーザーは本規約に同意したものと見なされます。
+            また、「ユーザー」とは本ボットを利用するすべての個人および団体を指します。
+        </p>
+        
+        <p class="privacy-policy-title-1">2. サービス提供</p>
+        <p class="privacy-policy-title-2">
+            ボットは、ユーザーがDiscord内でさまざまな機能を使用できるようサポートします。<br>
+            ボットの機能およびサービスは、予告なしに変更、追加、または中断される場合があります。
+        </p>
+
+        <p class="privacy-policy-title-1">3. ユーザーの義務</p>
+        <p class="privacy-policy-title-2">
+            ユーザーは、本規約およびDiscordの利用規約を遵守する必要があります。<br>
+            ボットを不正利用し、違法または不適切な活動（例：スパム、ハッキング、違法コンテンツの共有など）をしてはなりません。<br>
+            ボットに不具合やバグを発見した場合、運営者に報告し、これを悪用してはなりません。<br>
+            他のユーザーに損害を与える行為は禁止されています。
+        </p>
+
+        <p class="privacy-policy-title-1">4. データおよびプライバシーの保護</p>
+        <p class="privacy-policy-title-2">
+            ボットはユーザーのプライバシーを保護し、詳細は<a href="../privacy-policy/" target="_blank"> プライバシーポリシー</a>で確認できます。<br>
+            ユーザーはいつでも自分のデータ削除をリクエストできます。<br>
+            運営者は法的に要求された場合を除き、ユーザーのデータを第三者と共有しません。
+        </p>
+
+        <p class="privacy-policy-title-1">5. サービスの制限および終了</p>
+        <p class="privacy-policy-title-2">
+            運営者は、必要に応じて特定のユーザーに対してサービスの利用制限またはブロックを行うことがあります。<br>
+            ユーザーが規約に違反した場合、サービスの利用が制限されることがあります。<br>
+            ボットのサービスは、運営者の判断により一時的または永続的に終了されることがあり、その場合、補償は提供されません。
+        </p>
+
+        <p class="privacy-policy-title-1">6. 免責事項</p>
+        <p class="privacy-policy-title-2">
+            ボットは「現状のまま」提供され、利用中に発生する問題について運営者は法的責任を負いません。<br>
+            運営者はサービスの中断、データの喪失、エラーなどに対する補償を提供しません。<br>
+            ユーザーがボットを通じて行ったすべての行動の責任は、ユーザー本人にあります。
+        </p>
+
+        <p class="privacy-policy-title-1">7. 規約の変更</p>
+        <p class="privacy-policy-title-2">
+            本規約は必要に応じて変更されることがあります。重要な変更がある場合は、事前に通知されます。<br>
+            ユーザーは変更後の規約を確認し、引き続きボットを使用することで、変更に同意したものと見なされます。<br>
+            変更後の規約に同意しない場合、ユーザーはボットの利用を中止しなければなりません。
+        </p>
+
+        <p class="privacy-policy-title-1">8. 準拠法および管轄</p>
+        <p class="privacy-policy-title-2">
+            本規約は韓国の法律に従って解釈され、関連する紛争が発生した場合、該当する法律に従います。<br>
+            法的な争いが発生した場合、運営者の所在地を管轄する裁判所が基本的な管轄となります。
+        </p>
+
+        <p class="privacy-policy-title-1">9. お問い合わせ</p>
+        <p class="privacy-policy-title-2">
+            サービス利用に関してご不明な点があれば、以下の連絡先までお問い合わせください。<br>
+            &nbsp;&nbsp;৹ Discord: gguummaa
+        </p>
+
+        <p class="privacy-policy-title-1">10. 法的効力</p>
+        <p class="privacy-policy-title-2">
+            本規約の法的効力は、韓国語版を基準とします。
+        </p>
+
+        <p class="privacy-policy-title-3">最終更新日: 2025.03.01</p>
+    </div>
+
+
+    
+
+
+
+
+    <script src="../../index.js"></script>
+</body>
+</html>

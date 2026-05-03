@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+
+body {
+    min-width: 1400px;
+    background-color: #4d6652; /* #526579 → 초록회색 */
+}
+
+.top-bar {
+    background-color: #1e3322; /* #223446 → 딥그린 */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.top-icon {
+    margin-left: 30px;
+}
+
+.right-menu {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 65px;
+}
+
+.language-selector {
+    position: relative;
+}
+
+.top-language-text {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #5a7160; /* #607183 → 초록회색 */
+    user-select: none;
+}
+
+.language-menu {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: #2a3f2b; /* #2d4052 → 다크그린 */
+    border-radius: 8px;
+    min-width: 150px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    z-index: 1001;
+}
+
+.language-option {
+    padding: 12px 16px;
+    color: #b0c5b2; /* #b8c5d0 → 초록회색 */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+.language-option:hover {
+    background-color: #374f38; /* #3a4f64 → 초록 계열 */
+}
+
+.language-option:active {
+    background-color: #3f5a40; /* #425a70 → 초록 계열 */
+}
+
+.top-language-text:hover {
+    color: #678069; /* #6e8094 → 초록회색 */
+}
+
+.top-language-text:active {
+    color: #5f7561; /* #67778a → 초록회색 */
+}
+
+.top-bar-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-color: #3b5a3c; /* #42586b → 초록 계열 */
+}
+
+.privacy-policy {
+    background-color: #4d6652; /* #526579 → 초록회색 */
+    width: 100%;
+    min-height: 1720px;
+    margin-top: 430px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.privacy-policy-title {
+    margin-top: -200px;
+    font-family: "Jua", sans-serif;
+    font-size: 30px;
+}
+
+.privacy-policy-title-1 {
+    margin-top: 65px;
+    font-weight: bold;
+    width: 715px;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.privacy-policy-title-2 {
+    margin-top: 10px;
+    width: 600px;
+}
+
+.privacy-policy-title-3 {
+    margin-top: 110px;
+    width: 600px;
+    font-size: 14px;
+    color: rgb(26, 26, 26);
+}
