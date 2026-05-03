@@ -2,8 +2,8 @@
 const translations = {
   en: {
     langName: "English (US)",
-    mainText: "Capture every moment<br>that happens in your server!",
-    mainText2: "Logs all server events, including message deletions, edits, joins, and leaves.",
+    mainText: "All kinds of Minecraft information<br>in one bot!",
+    mainText2: "Provides a wide range of information including server status, player skins, ore distribution, crafting recipes, and more.",
     btnInvite: "Invite",
     btnFeatures: "See features",
     serverCount: "InfoCraft is currently being used on approximately 800 servers.",
@@ -40,8 +40,8 @@ const translations = {
   },
   ja: {
     langName: "日本語",
-    mainText: "サーバーで起こる<br>すべての瞬間を記録しましょう！",
-    mainText2: "メッセージの削除・編集、入退室など、サーバーで発生するすべてのログを記録します。",
+    mainText: "マインクラフトのさまざまな情報を<br>1つのボットで！",
+    mainText2: "サーバー状態、プレイヤースキン、鉱石分布、クラフトレシピなど、さまざまな情報を提供します。",
     btnInvite: "招待",
     btnFeatures: "機能を見る",
     serverCount: "InfoCraftは現在、約800のサーバーで使用されています。",
