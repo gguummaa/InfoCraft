@@ -133,7 +133,7 @@ body {
     font-size: 50px;
 
     font-family: "Jua", sans-serif;
-    margin-right: 490px;
+    margin-right: 430px;
     margin-top: 330px;
     color: #161616;
 }
@@ -141,7 +141,7 @@ body {
 .main-text-2 {
     display: flex;
     justify-content: center;
-    margin-right: 575px;
+    margin-right: 510px;
     color: rgb(29, 29, 29);
     font-family: "Nanum Gothic", sans-serif;
 }
